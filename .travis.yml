@@ -5,4 +5,4 @@ jobs:
   include:
   - script:
     - export PATH=$MSBUILD_PATH:$PATH
-    - MSBuild.exe windows-native-hello.sln
+    - MSBuild.exe  /p:Configuration=Release windows-native-hello.sln
