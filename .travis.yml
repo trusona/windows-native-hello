@@ -1,3 +1,5 @@
 os: windows
 language: cpp
 solution: windows-native-hello.sln
+script:
+  - msbuild /p:Configuration=Release windows-native-hello.sln
