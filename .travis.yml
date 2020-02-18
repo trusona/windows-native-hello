@@ -5,6 +5,4 @@ jobs:
   include:
   - script:
     - export PATH=$MSBUILD_PATH:$PATH
-    ## todo: figure out how to build a "release" instead of "debug"
-    ## https://docs.microsoft.com/en-us/visualstudio/msbuild/msbuild-command-line-reference?view=vs-2019
     - MSBuild.exe -p:configuration=release windows-native-hello.sln
